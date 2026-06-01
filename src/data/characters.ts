@@ -43,7 +43,7 @@ export const adhamProfile: CharacterProfile = {
     {
       name: 'Shunpo Mastery',
       type: 'Hoho',
-      description: 'Adham\\'s speed is his most refined attribute. He moves with a quiet efficiency, minimizing wasted motion.'
+      description: "Adham's speed is his most refined attribute. He moves with a quiet efficiency, minimizing wasted motion."
     },
     {
       name: 'Kurokiba (Black Fang)',
@@ -53,7 +53,7 @@ export const adhamProfile: CharacterProfile = {
     {
       name: 'Incomplete Bankai',
       type: 'Bankai',
-      description: 'Stable and functional, but incomplete. It feels like a translation of something that hasn\\'t been fully written yet, likely tied to the Quincy blood running dormant in his soul.'
+      description: "Stable and functional, but incomplete. It feels like a translation of something that hasn't been fully written yet, likely tied to the Quincy blood running dormant in his soul."
     },
     {
       name: 'Hollow Mask',
@@ -64,7 +64,7 @@ export const adhamProfile: CharacterProfile = {
   lore: [
     {
       title: 'Origins: The Lie He Lived In',
-      description: 'Adham was born into quiet wealth. His parents presented themselves as successful merchants — refined, private, and oddly cautious about who they let near their home. He never questioned it. What he didn\\'t know was that the comfort was a cover. His parents were Echt Quincy — purebloods — who had severed ties with the Wandenreich and gone into hiding rather than serve under Yhwach.'
+      description: "Adham was born into quiet wealth. His parents presented themselves as successful merchants — refined, private, and oddly cautious about who they let near their home. He never questioned it. What he didn't know was that the comfort was a cover. His parents were Echt Quincy — purebloods — who had severed ties with the Wandenreich and gone into hiding rather than serve under Yhwach."
     },
     {
       title: 'Soul Society: The Slow Climb',
@@ -76,7 +76,7 @@ export const adhamProfile: CharacterProfile = {
     },
     {
       title: 'Aizen: The Hatred',
-      description: 'Aizen had engineered the whole thing. The Hollowfication, the framing, the exile — all of it traced back to him. What Adham feels toward Aizen is not the hot, dramatic anger some people carry. It\\'s something deeper and worse. It\\'s hate. The quiet kind.'
+      description: "Aizen had engineered the whole thing. The Hollowfication, the framing, the exile — all of it traced back to him. What Adham feels toward Aizen is not the hot, dramatic anger some people carry. It's something deeper and worse. It's hate. The quiet kind."
     },
     {
       title: 'Exile',
