@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { characters } from '@/data/characters';
 import { ThemeSetter } from '@/components/ThemeSetter';
+import { getAssetPath } from '@/lib/utils';
 
 export default function Home() {
   const charList = Object.entries(characters);
@@ -30,7 +31,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-border/50 group-hover:border-foreground/50 transition-all duration-500 shadow-2xl relative">
                   <img 
-                    src={profile.assets.portrait} 
+                    src={getAssetPath(profile.assets.portrait)} 
                     alt={profile.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                   />

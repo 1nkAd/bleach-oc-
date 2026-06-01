@@ -7,6 +7,8 @@ import { StatRing } from '@/components/StatRing';
 import { LoreTimeline } from '@/components/LoreTimeline';
 import { AbilityCard } from '@/components/AbilityCard';
 import { GalleryCarousel } from '@/components/GalleryCarousel';
+import { RelationshipCard } from '@/components/RelationshipCard';
+import { getAssetPath } from '@/lib/utils';
 
 export function generateStaticParams() {
   return Object.keys(characters).map((slug) => ({
@@ -32,7 +34,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
           <header className="flex flex-col items-center text-center space-y-6 mb-24">
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-brand shadow-[0_0_40px_rgba(var(--brand),0.3)]">
               <img 
-                src={profile.assets.portrait} 
+                src={getAssetPath(profile.assets.portrait)} 
                 alt={profile.name} 
                 className="object-cover w-full h-full"
               />
@@ -96,6 +98,21 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
             <section className="mb-24">
               <h2 className="font-heading text-3xl font-bold text-brand mb-12 text-center">Chronicles</h2>
               <LoreTimeline events={profile.lore} />
+            </section>
+          )}
+
+          {/* RELATIONSHIPS SECTION */}
+          {profile.relationships && profile.relationships.length > 0 && (
+            <section className="mb-24">
+              <h2 className="font-heading text-3xl font-bold text-brand mb-12 flex items-center gap-4">
+                <span className="w-8 h-1 bg-highlight rounded-full" />
+                Interpersonal Dynamics
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {profile.relationships.map((rel, i) => (
+                  <RelationshipCard key={i} relationship={rel} />
+                ))}
+              </div>
             </section>
           )}
 

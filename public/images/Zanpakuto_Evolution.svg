@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 740">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', monospace; }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="30" y="40" fill="white" font-size="16" font-weight="700">Zanpakuto Evolution: Kurokiba</text>
+  <text x="30" y="60" fill="#94a3b8" font-size="10">Evolution stages and key abilities of Adham's Zanpakuto</text>
+
+  <!-- Arrows -->
+  <line x1="300" y1="130" x2="300" y2="180" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="310" y="158" fill="#94a3b8" font-size="9">Release: Rend and shatter</text>
+
+  <line x1="300" y1="260" x2="300" y2="310" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="310" y="288" fill="#94a3b8" font-size="9">Bankai Materialization</text>
+
+  <line x1="300" y1="400" x2="300" y2="450" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="310" y="428" fill="#94a3b8" font-size="9">Internal Realization</text>
+
+  <line x1="300" y1="530" x2="300" y2="580" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="310" y="558" fill="#94a3b8" font-size="9">Structural Synthesis</text>
+
+  <!-- Masking Rects -->
+  <rect x="180" y="80" width="240" height="50" rx="25" fill="#0f172a"/>
+  <rect x="180" y="180" width="240" height="80" rx="6" fill="#0f172a"/>
+  <rect x="180" y="310" width="240" height="90" rx="6" fill="#0f172a"/>
+  <rect x="180" y="450" width="240" height="80" rx="6" fill="#0f172a"/>
+  <rect x="180" y="580" width="240" height="105" rx="25" fill="#0f172a"/>
+
+  <!-- Base Katana -->
+  <rect x="180" y="80" width="240" height="50" rx="25" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="300" y="105" fill="white" font-size="12" font-weight="600" text-anchor="middle">Sealed Form</text>
+  <text x="300" y="120" fill="#94a3b8" font-size="9" text-anchor="middle">Standard Katana</text>
+
+  <!-- Shikai -->
+  <rect x="180" y="180" width="240" height="80" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="300" y="205" fill="white" font-size="12" font-weight="600" text-anchor="middle">Shikai: Kurokiba</text>
+  <text x="300" y="221" fill="#94a3b8" font-size="9" text-anchor="middle">Black Fang</text>
+  <text x="300" y="235" fill="white" font-size="9" text-anchor="middle">Segmented black gauntlets / tonfa-blades</text>
+  <text x="300" y="247" fill="#22d3ee" font-size="8" text-anchor="middle">Kinetic Conversion (Raw Hakuda Force)</text>
+
+  <!-- Incomplete Bankai -->
+  <rect x="180" y="310" width="240" height="90" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="300" y="335" fill="white" font-size="12" font-weight="600" text-anchor="middle">Incomplete Bankai</text>
+  <text x="300" y="351" fill="#94a3b8" font-size="9" text-anchor="middle">The False Duality</text>
+  <text x="300" y="365" fill="white" font-size="9" text-anchor="middle">Forced Shift: Yin (Hollow) &amp; Yang (Shinigami)</text>
+  <text x="300" y="377" fill="#fb7185" font-size="8" text-anchor="middle">Flawed: Drains excessive stamina &amp; reiatsu</text>
+  <text x="300" y="389" fill="white" font-size="8" text-anchor="middle">States operate in strict opposition</text>
+
+  <!-- Catalyst -->
+  <rect x="180" y="450" width="240" height="80" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="300" y="475" fill="white" font-size="12" font-weight="600" text-anchor="middle">The Catalyst</text>
+  <text x="300" y="491" fill="#94a3b8" font-size="9" text-anchor="middle">Quincy Acknowledgment</text>
+  <text x="300" y="505" fill="white" font-size="9" text-anchor="middle">Accepting the dormant Quincy bloodline</text>
+  <text x="300" y="517" fill="#fbbf24" font-size="8" text-anchor="middle">Acts as mechanical fulcrum binding the soul</text>
+
+  <!-- True Bankai -->
+  <rect x="180" y="580" width="240" height="105" rx="25" fill="rgba(59, 130, 246, 0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="300" y="605" fill="white" font-size="12" font-weight="600" text-anchor="middle">The True Bankai</text>
+  <text x="300" y="621" fill="#94a3b8" font-size="9" text-anchor="middle">Perfect Equilibrium</text>
+  <text x="300" y="635" fill="white" font-size="9" text-anchor="middle">Unified Nodachi (Split black &amp; white blade)</text>
+  <text x="300" y="647" fill="#60a5fa" font-size="8" text-anchor="middle">Abilities:</text>
+  <text x="300" y="659" fill="white" font-size="8" text-anchor="middle">- Equinox Cleave (Unblockable dual-property)</text>
+  <text x="300" y="671" fill="white" font-size="8" text-anchor="middle">- Soul Fission (Structural soul split)</text>
+
+</svg>

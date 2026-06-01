@@ -4,6 +4,8 @@ import { characters } from '@/data/characters';
 import { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 
+import { getAssetPath } from '@/lib/utils';
+
 export function GlobalAudio() {
   const { activeCharacter } = useTheme();
   const [isPlaying, setIsPlaying] = useState(false);
@@ -11,7 +13,7 @@ export function GlobalAudio() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const profile = activeCharacter ? characters[activeCharacter] : null;
-  const audioSrc = profile?.assets?.themeSong || '';
+  const audioSrc = profile?.assets?.themeSong ? getAssetPath(profile.assets.themeSong) : '';
 
   // Auto-play when character changes if it was already playing
   useEffect(() => {

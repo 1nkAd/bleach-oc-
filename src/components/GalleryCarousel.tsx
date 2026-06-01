@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 
+import { getAssetPath } from "@/lib/utils";
+
 export interface GalleryImage {
   src: string;
   alt: string;
@@ -33,7 +35,7 @@ export function GalleryCarousel({ images }: { images: GalleryImage[] }) {
                 <Card className="bg-transparent border-0 shadow-none overflow-hidden group">
                   <CardContent className="flex flex-col aspect-[3/4] items-center justify-center p-0 relative rounded-xl overflow-hidden border-2 border-border/50 group-hover:border-highlight/50 transition-colors">
                     <img 
-                      src={image.src} 
+                      src={getAssetPath(image.src)} 
                       alt={image.alt} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
