@@ -19,6 +19,7 @@ export interface CharacterProfile {
   };
   assets: {
     portrait: string;
+    themeSong?: string;
   };
   dossier: {
     race: string;
