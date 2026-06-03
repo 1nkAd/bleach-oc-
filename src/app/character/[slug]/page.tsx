@@ -116,13 +116,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
             </section>
           )}
 
-          {/* GALLERY SECTION */}
-          {profile.gallery && profile.gallery.length > 0 && (
-            <section className="mb-24">
-              <h2 className="font-heading text-3xl font-bold text-brand mb-12 text-center">Visual Archives</h2>
-              <GalleryCarousel images={profile.gallery} />
-            </section>
-          )}
+
 
         </div>
       </main>
